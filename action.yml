@@ -1,0 +1,9 @@
+name: OWASP-Attack-Surface-Detector-Action
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+inputs:
+    ReportLocation:
+        description: The location the reports will be saved.
+        required: false
+        default: /github/workspace
